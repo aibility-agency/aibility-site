@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../lang.js"></script>
+<title>aibility · Automatisation et IA pour les PME suisses</title>
+<meta name="description" content="E-mails, appels, rendez-vous et rapports : nous les confions à l’IA pour vous, avec des données sur des serveurs en Suisse. Découvrez en une minute combien vous pouvez économiser.">
+<link rel="alternate" hreflang="it" href="../">
+<link rel="alternate" hreflang="en" href="../en/">
+<link rel="alternate" hreflang="de" href="../de/">
+<link rel="alternate" hreflang="fr" href="./">
+<link rel="alternate" hreflang="x-default" href="../">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="logo" aria-label="aibility, haut de page"><img src="../assets/logo.svg" alt="aibility"></a>
+    <nav aria-label="Sections" class="mnav"><a href="#giornata">Ce que nous automatisons</a><a href="#come">Comment ça marche</a><a href="#prezzi">Tarifs</a><a href="#contatto">Contact</a></nav>
+    <div class="hdr-right">
+      <nav aria-label="Langue" class="lang">
+        <a href="../en/" lang="en" hreflang="en">EN</a>
+        <a href="../de/" lang="de" hreflang="de">DE</a>
+        <a href="../?lang=it" lang="it" hreflang="it">IT</a>
+        <a href="./" lang="fr" hreflang="fr" aria-current="true">FR</a>
+      </nav>
+      <a href="#diagnosi" class="hdr-cta">Analyse gratuite</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="top" class="wrap hero">
+  <p class="eyebrow eyebrow-hero"><span aria-hidden="true" class="pulse"></span>AUTOMATISATION ET IA POUR LES PME SUISSES</p>
+  <h1><span class="hl">Le travail répétitif de votre bureau, automatisé.</span> <span class="hl hl2">Avec les logiciels que vous utilisez déjà.</span></h1>
+  <span aria-hidden="true" class="bar"></span>
+  <p class="lede fadein">E-mails, appels, rendez-vous et rapports : nous les confions à l’IA pour vous, avec des données sur des serveurs en Suisse. Découvrez en une minute combien vous pouvez économiser.</p>
+  <div class="hero-actions fadein">
+    <a href="#diagnosi" class="btn btn-primary">Calculez vos économies <span class="ar">→</span></a>
+    <a href="#giornata" class="link-strong">Ce que nous automatisons ↓</a>
+  </div>
+  <ul class="trust fadein">
+    <li>Serveurs en Suisse</li><li>Premier processus en 2 à 4 semaines</li><li>Réponse dans la journée</li><li class="hide-m">Tout en ligne</li><li>Français, allemand, italien, anglais</li>
+  </ul>
+</section>
+
+<section aria-label="Outils que nous connectons" class="tools">
+  <div class="wrap tools-in">
+    <p class="tools-label">SE CONNECTE À</p>
+    <div class="mq">
+      <div class="mq-track" id="mq-track">
+        <ul class="tool-list"><li class="tool">Outlook et Microsoft 365</li><li class="tool">Microsoft Teams</li><li class="tool">Gmail et Google Workspace</li><li class="tool">Excel</li><li class="tool">Google Sheets</li><li class="tool">SharePoint</li><li class="tool">OneDrive</li><li class="tool">Google Drive</li><li class="tool">Dropbox</li><li class="tool">Odoo</li><li class="tool">Airtable</li><li class="tool">HubSpot</li><li class="tool">Salesforce</li><li class="tool">Pipedrive</li><li class="tool">Zendesk</li><li class="tool">Slack</li><li class="tool">WhatsApp Business</li><li class="tool">Google Calendar</li><li class="tool">Calendly</li><li class="tool">Stripe</li><li class="tool">Shopify</li><li class="tool">WooCommerce</li><li class="tool">Mailchimp</li><li class="tool">Notion</li><li class="tool">Asana</li><li class="tool">Trello</li><li class="tool">monday.com</li><li class="tool">ClickUp</li><li class="tool">Jira</li><li class="tool">Typeform</li><li class="tool">OpenAI</li><li class="tool">Claude</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="giornata" class="wrap sec">
+  <div class="rv day-head">
+    <div class="day-head-text">
+      <p class="eyebrow">CE QUE NOUS AUTOMATISONS</p>
+      <h2 class="h2">Une journée au bureau. Avant et après.</h2>
+    </div>
+    <div role="group" aria-label="Choisir la vue" class="seg">
+      <button type="button" id="seg-before" aria-pressed="true">Avant</button>
+      <button type="button" id="seg-after" aria-pressed="false">Avec aibility</button>
+    </div>
+  </div>
+  <ol class="rv day" id="day"></ol>
+  <p class="day-summary" id="day-summary"></p>
+</section>
+
+<section id="diagnosi" class="diag">
+  <div class="wrap diag-in">
+    <div class="diag-intro rv">
+      <p class="eyebrow eyebrow-dark">DIAGNOSTIC GRATUIT · 1 MINUTE</p>
+      <h2 class="h2">Trois questions. Ensuite, vous savez combien de temps vous perdez.</h2>
+      <p class="diag-lede">Vous voyez tout de suite votre potentiel d’économies. Puis nous le vérifions ensemble lors d’une analyse gratuite de 30 minutes.</p>
+    </div>
+
+    <div class="card rv" id="quiz">
+      <div class="card-head">
+        <p class="card-title">DIAGNOSTIC GRATUIT</p>
+        <div class="progress" aria-label="Progression">
+          <span class="dots" id="dots"></span>
+          <span class="q-label" id="q-label" aria-live="polite">Question 1 sur 3</span>
+        </div>
+      </div>
+      <div class="card-body">
+
+        <div class="qstep qfade" data-step="1">
+          <p class="q-kicker hide-m">QUESTION 1</p>
+          <h3 class="q-title">Où perdez-vous le plus de temps ?</h3>
+          <div class="opts" id="opts"></div>
+          <button type="button" class="link-btn q-skip" data-go="2">Je ne sais pas encore</button>
+        </div>
+
+        <div class="qstep qfade" data-step="2" hidden>
+          <div>
+            <p class="q-kicker"><span class="hide-m">QUESTION 2 · </span><span data-area-up></span></p>
+            <h3 class="q-title q-title-tight">Quel est le poids de ce travail aujourd’hui ?</h3>
+          </div>
+          <div>
+            <div class="rng-row"><label for="fq-n">Personnes concernées</label><span class="rng-val" id="n-val"></span></div>
+            <input id="fq-n" class="rng" type="range" step="1">
+          </div>
+          <div>
+            <div class="rng-row"><label for="fq-h">Heures par semaine<span class="hide-m">, par personne</span></label><span class="rng-val" id="h-val"></span></div>
+            <input id="fq-h" class="rng" type="range" step="1">
+          </div>
+          <div class="btn-row">
+            <button type="button" class="btn-back" aria-label="Retour" data-go="1">←</button>
+            <button type="button" class="btn-go" data-go="3">Voir le résultat →</button>
+          </div>
+        </div>
+
+        <form class="qstep qfade" data-step="3" id="lead-form" novalidate hidden>
+          <div class="result">
+            <p class="result-area" data-area-up></p>
+            <p class="result-label">Votre potentiel d’économies</p>
+            <p class="result-num"><span data-currency></span> <span id="chf-anim">0</span> <span class="result-unit">par an</span></p>
+            <p class="result-sub"><span id="hrs-mon"></span> heures <span class="hide-m">libérées chaque mois</span><span class="show-m">par mois</span> · <span id="fte"></span> postes à plein temps</p>
+          </div>
+          <h3 class="q-sub">Vérifions-le sur vos systèmes. Gratuitement.</h3>
+          <div class="grid-2">
+            <div class="field"><label for="fq-fn">Nom</label><input id="fq-fn" name="name" class="inp" type="text" placeholder="Votre nom" autocomplete="name" required></div>
+            <div class="field"><label for="fq-fa">Entreprise</label><input id="fq-fa" name="company" class="inp" type="text" placeholder="Nom de l’entreprise" autocomplete="organization"></div>
+          </div>
+          <div class="field"><label for="fq-fe">E-mail professionnel</label><input id="fq-fe" name="email" class="inp" type="email" placeholder="nom@entreprise.ch" autocomplete="email" required></div>
+          <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label class="check"><input type="checkbox" name="consent" required>J’accepte qu’aibility traite mes données pour répondre à ma demande, conformément à la <a href="privacy.html" target="_blank">politique de confidentialité</a>.</label>
+          <p class="form-err" role="alert" hidden></p>
+          <div class="btn-row">
+            <button type="button" class="btn-back" aria-label="Retour" data-go="2">←</button>
+            <button type="submit" class="btn-go btn-go-lg">Demander l’analyse gratuite →</button>
+          </div>
+          <p class="fine" id="calc-note"></p>
+        </form>
+
+        <div class="qstep qfade" data-step="4" hidden>
+          <p class="q-kicker hide-m">DERNIÈRE ÉTAPE</p>
+          <h3 class="q-title q-title-flat">Merci<span id="name-suffix"></span>. Choisissez un horaire.</h3>
+          <p class="q-text">Nous partirons de « <span id="area-name"></span> » et de votre potentiel de <span data-currency></span> <span id="chf"></span> par an. Visioconférence de <span data-meeting-min>30</span> minutes, en ligne.</p>
+          <div class="booker" id="booker" aria-live="polite"></div>
+          <button type="button" class="btn-ghost" data-go="3" id="back-from-4">← Retour</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="diag-list rv">
+      <p class="list-label">CE QUE VOUS APPORTE L’ANALYSE</p>
+      <ul class="sq-list">
+        <li><span aria-hidden="true" class="sq"></span>Les tâches qui vous coûtent le plus d’heures</li>
+        <li><span aria-hidden="true" class="sq"></span>Les 2 ou 3 automatisations par lesquelles commencer</li>
+        <li><span aria-hidden="true" class="sq"></span>Délais et coûts indicatifs, par écrit</li>
+        <li><span aria-hidden="true" class="sq sq-coral"></span>Sans engagement</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="come" class="wrap sec">
+  <p class="eyebrow">COMMENT ÇA MARCHE</p>
+  <h2 class="h2 rv">Tout commence par une analyse de 30 minutes. Gratuite.</h2>
+  <ol class="steps" id="steps">
+    <li aria-hidden="true" class="pbar"></li>
+    <li class="st" style="transition-delay:0s"><p class="st-k">01 · Gratuite, 30 min</p><h3>Analyse gratuite</h3><p class="st-t">Les tâches qui vous coûtent le plus de temps.</p></li>
+    <li class="st" style="transition-delay:.6s"><p class="st-k">02 · Offre écrite</p><h3>Nous définissons la première étape</h3><p class="st-t">Périmètre, résultat, délais et prix fixe.</p></li>
+    <li class="st" style="transition-delay:1.2s"><p class="st-k">03 · 2 à 4 semaines</p><h3>Nous construisons et testons</h3><p class="st-t">Sur des cas réels, avec votre équipe.</p></li>
+    <li class="st" style="transition-delay:1.8s"><p class="st-k">04 · Chaque mois</p><h3>Nous exploitons et améliorons</h3><p class="st-t">Suivi et rapport sur le temps gagné.</p></li>
+  </ol>
+</section>
+
+<section class="sec-line">
+  <div class="wrap sec-m faq">
+    <div class="faq-head">
+      <p class="eyebrow">QUESTIONS</p>
+      <h2 class="h2-s">Avant de commencer.</h2>
+    </div>
+    <div class="faq-list rv">
+      <details><summary>Devons-nous changer nos logiciels ?</summary><p>En règle générale, non. Nous partons des outils que vous utilisez déjà ; les possibilités dépendent des fonctions disponibles et des accès.</p></details>
+      <details><summary>Combien de temps faut-il ?</summary><p>Un premier processus est généralement opérationnel en 2 à 4 semaines, selon les intégrations.</p></details>
+      <details><summary>Pourquoi un abonnement mensuel ?</summary><p>Une automatisation travaille chaque jour dans un environnement qui change. L’abonnement garantit qu’elle continue de fonctionner et s’améliore, avec un rapport mensuel de ce qu’elle a produit.</p></details>
+      <details><summary>Comment les données sont-elles gérées ?</summary><p>Les données restent sur des serveurs en Suisse. Nous convenons d’abord des données nécessaires et de qui y accède, dans le respect de la loi suisse sur la protection des données (nLPD).</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="prezzi" class="sec-line">
+  <div class="wrap sec-m">
+    <p class="eyebrow">TARIFS</p>
+    <h2 class="h2">Des prix clairs. Une offre sur mesure.</h2>
+    <p class="sec-lede">Un abonnement mensuel maintient tout en état de marche. Nous chiffrons la mise en place <span class="hide-m">de la première automatisation </span>après l’analyse gratuite.</p>
+    <div class="plans rv">
+      <div class="plan">
+        <div class="plan-top"><h3>Base</h3><p class="price" id="price-base"></p></div>
+        <p class="plan-t">1 à 2 automatisations, suivi, corrections et rapport mensuel.</p>
+      </div>
+      <div class="plan plan-rec">
+        <div class="plan-top"><h3>Croissance <span class="badge">Recommandé</span></h3><p class="price" id="price-growth"></p></div>
+        <p class="plan-t">Jusqu’à 5 automatisations ou assistants, heures d’amélioration incluses, réunion trimestrielle.</p>
+      </div>
+      <div class="plan">
+        <div class="plan-top"><h3>Partenaire</h3><p class="price price-req" id="price-partner">Sur demande</p></div>
+        <p class="plan-t">Un service IA externe : solutions sur mesure et une nouvelle automatisation chaque trimestre.</p>
+      </div>
+    </div>
+    <p class="fine-lg">Prix finaux · Licences et coûts d’utilisation de l’IA au prix coûtant · Les automatisations tournent sur notre infrastructure en Suisse</p>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap cta-in">
+    <h2 class="rv">Découvrons ce qu’il faut automatiser en premier.</h2>
+    <a href="#diagnosi" class="btn btn-white">Commencer le diagnostic gratuit <span class="ar">↑</span></a>
+  </div>
+</section>
+
+<section id="contatto" class="contact">
+  <div class="wrap contact-in">
+    <div class="contact-intro">
+      <p class="eyebrow">CONTACT</p>
+      <h2 class="h2-s">Vous préférez nous écrire ?</h2>
+      <p class="sec-lede">Deux lignes suffisent. Nous répondons dans la journée.</p>
+      <p class="contact-mail hide-m"><a href="mailto:info@aibility-agency.ch">info@aibility-agency.ch</a></p>
+    </div>
+    <div class="contact-body rv">
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="grid-2 grid-2-wide">
+          <div class="field"><label for="fc-n">Nom</label><input id="fc-n" name="name" class="inp inp-w" type="text" placeholder="Votre nom" autocomplete="name" required></div>
+          <div class="field"><label for="fc-e">E-mail</label><input id="fc-e" name="email" class="inp inp-w" type="email" placeholder="nom@entreprise.ch" autocomplete="email" required></div>
+        </div>
+        <div class="field"><label for="fc-m">Message</label><textarea id="fc-m" name="message" class="inp inp-w" rows="4" placeholder="Comment pouvons-nous vous aider ?" required></textarea></div>
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="check"><input type="checkbox" name="consent" required>J’accepte qu’aibility traite mes données pour me répondre, conformément à la <a href="privacy.html" target="_blank">politique de confidentialité</a>.</label>
+        <p class="form-err" role="alert" hidden></p>
+        <button type="submit" class="btn-dark">Envoyer le message</button>
+        <p class="show-m contact-or">ou <a href="mailto:info@aibility-agency.ch">info@aibility-agency.ch</a></p>
+      </form>
+      <div class="sent" id="contact-sent" hidden>
+        <span aria-hidden="true" class="sq-coral-lg"></span>
+        <div><p class="sent-t">Merci, message reçu.</p><p class="sent-s">Nous vous répondons dans la journée.</p><button type="button" class="link-btn-strong" id="contact-new">Écrire un autre message</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <div class="ftr-brand"><img src="../assets/logo-light.svg" alt="aibility"><p class="motto">Let machines repeat. Let humans create.</p></div>
+    <div class="ftr-meta"><p>aibility · un projet de Danilo Africano et Giovanni De Luca</p><p>info@aibility-agency.ch · <a href="#impressum">Mentions légales</a> · <a href="privacy.html">Confidentialité</a></p></div>
+  </div>
+  <div id="impressum" class="wrap imp">
+    <div class="imp-in">
+      <p class="imp-t">Mentions légales</p>
+      <p>Responsables du site :<br class="hide-m"> Danilo Africano et Giovanni De Luca</p>
+      <p>Bäumlihofstrasse 149a,<br class="hide-m"> 4048 Bâle, Suisse</p>
+      <p>info@aibility-agency.ch<br class="hide-m"><span class="show-m-inline"> · </span>aibility est une marque, pas une société inscrite au registre du commerce.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../config.js"></script>
+<script src="../i18n.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>
